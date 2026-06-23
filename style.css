@@ -6,10 +6,15 @@ font-family:Arial,sans-serif;
 }
 
 body{
-background:#111;
+background-image:url("background.jpg");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+background-attachment:fixed;
 color:white;
 line-height:1.6;
 }
+
 
 header{
 background:#000;
@@ -97,7 +102,7 @@ border-radius:10px;
 }
 
 footer{
-background:black;
+background:red;
 padding:20px;
 text-align:center;
 }
