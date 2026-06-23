@@ -5,6 +5,10 @@ box-sizing:border-box;
 font-family:'Segoe UI',sans-serif;
 }
 
+html{
+scroll-behavior:smooth;
+}
+
 body{
 background:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("background.jpeg");
 background-size:cover;
@@ -19,7 +23,8 @@ background:#0a0a0a;
 padding:20px 50px;
 position:sticky;
 top:0;
-border-bottom:3px solid red;
+z-index:1000;
+border-bottom:3px solid #ff3333;
 }
 
 nav{
@@ -29,9 +34,9 @@ align-items:center;
 }
 
 nav h2{
-color:red;
+color:#ff3333;
 font-size:35px;
-text-shadow:0 0 10px red;
+text-shadow:0 0 2px #ff3333;
 }
 
 nav ul{
@@ -47,10 +52,11 @@ nav ul li a{
 text-decoration:none;
 color:white;
 font-weight:bold;
+transition:.3s;
 }
 
 nav ul li a:hover{
-color:red;
+color:#ff3333;
 }
 
 .hero{
@@ -64,23 +70,26 @@ text-align:center;
 
 .hero h1{
 font-size:55px;
-color:red;
-text-shadow:0 0 15px red;
+color:#ff3333;
+text-shadow:0 0 4px #ff3333;
 }
 
 .hero p{
 margin-top:20px;
 font-size:24px;
+color:white;
 }
 
 .btn{
 display:inline-block;
 margin-top:25px;
 padding:12px 25px;
-background:red;
+background:#ff3333;
 color:white;
 text-decoration:none;
 border-radius:8px;
+font-weight:bold;
+transition:.3s;
 }
 
 .btn:hover{
@@ -94,8 +103,9 @@ text-align:center;
 }
 
 h2{
-color:red;
+color:#ff3333;
 margin-bottom:25px;
+text-shadow:0 0 2px #ff3333;
 }
 
 #about img{
@@ -103,9 +113,16 @@ width:250px;
 height:250px;
 object-fit:cover;
 border-radius:50%;
-border:4px solid red;
-box-shadow:0 0 20px red;
+border:4px solid #ff3333;
+box-shadow:0 0 8px rgba(255,51,51,0.5);
 margin-bottom:20px;
+}
+
+#about p{
+max-width:900px;
+margin:auto;
+font-size:20px;
+line-height:1.8;
 }
 
 .skill-box{
@@ -117,24 +134,92 @@ gap:15px;
 
 .skill-box div{
 padding:15px 20px;
-border:1px solid red;
-background:rgba(255,0,0,0.1);
+border:1px solid #ff3333;
+background:rgba(255,51,51,0.1);
 border-radius:10px;
+font-weight:bold;
+transition:.3s;
+}
+
+.skill-box div:hover{
+background:#ff3333;
+transform:scale(1.05);
 }
 
 .project-card{
 width:80%;
 margin:20px auto;
 padding:20px;
-background:#111;
-border-left:4px solid red;
+background:rgba(20,20,20,0.9);
+border-left:4px solid #ff3333;
 border-radius:10px;
+transition:.3s;
+}
+
+.project-card:hover{
+transform:translateY(-5px);
+box-shadow:0 0 10px rgba(255,51,51,0.4);
+}
+
+.project-card h3{
+color:#ff3333;
+margin-bottom:10px;
+}
+
+.project-card p{
+color:white;
+}
+
+.resume{
+text-align:center;
+}
+
+#contact p{
+margin:12px 0;
+font-size:18px;
 }
 
 footer{
 margin-top:40px;
 padding:20px;
 background:#0a0a0a;
-border-top:3px solid red;
+border-top:3px solid #ff3333;
 text-align:center;
+}
+
+@media(max-width:768px){
+
+header{
+padding:15px;
+}
+
+nav{
+flex-direction:column;
+}
+
+nav ul{
+margin-top:15px;
+}
+
+nav ul li{
+margin:0 10px;
+}
+
+.hero h1{
+font-size:38px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+#about img{
+width:180px;
+height:180px;
+}
+
+.project-card{
+width:95%;
+}
+
 }
