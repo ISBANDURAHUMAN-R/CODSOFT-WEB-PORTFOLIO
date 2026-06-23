@@ -2,20 +2,24 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,sans-serif;
+font-family:'Segoe UI',sans-serif;
 }
 
 body{
-background:#111;
+background:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("background.jpeg");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+background-attachment:fixed;
 color:white;
-line-height:1.6;
 }
 
 header{
-background:#000;
-padding:20px;
+background:#0a0a0a;
+padding:20px 50px;
 position:sticky;
 top:0;
+border-bottom:3px solid red;
 }
 
 nav{
@@ -24,18 +28,29 @@ justify-content:space-between;
 align-items:center;
 }
 
+nav h2{
+color:red;
+font-size:35px;
+text-shadow:0 0 10px red;
+}
+
 nav ul{
 display:flex;
 list-style:none;
 }
 
 nav ul li{
-margin-left:20px;
+margin-left:30px;
 }
 
-nav a{
-color:white;
+nav ul li a{
 text-decoration:none;
+color:white;
+font-weight:bold;
+}
+
+nav ul li a:hover{
+color:red;
 }
 
 .hero{
@@ -48,56 +63,78 @@ text-align:center;
 }
 
 .hero h1{
-font-size:60px;
+font-size:55px;
+color:red;
+text-shadow:0 0 15px red;
 }
 
 .hero p{
-margin:20px 0;
-font-size:20px;
+margin-top:20px;
+font-size:24px;
 }
 
 .btn{
-background:#00bfff;
-color:white;
+display:inline-block;
+margin-top:25px;
 padding:12px 25px;
+background:red;
+color:white;
 text-decoration:none;
-border-radius:5px;
+border-radius:8px;
+}
+
+.btn:hover{
+background:white;
+color:black;
 }
 
 section{
-padding:60px 20px;
+padding:70px 10%;
 text-align:center;
 }
 
+h2{
+color:red;
+margin-bottom:25px;
+}
+
 #about img{
-width:200px;
+width:250px;
+height:250px;
+object-fit:cover;
 border-radius:50%;
-margin:20px 0;
+border:4px solid red;
+box-shadow:0 0 20px red;
+margin-bottom:20px;
 }
 
 .skill-box{
 display:flex;
-justify-content:center;
 flex-wrap:wrap;
+justify-content:center;
 gap:15px;
 }
 
 .skill-box div{
-background:#222;
-padding:15px 25px;
-border-radius:8px;
+padding:15px 20px;
+border:1px solid red;
+background:rgba(255,0,0,0.1);
+border-radius:10px;
 }
 
 .project-card{
-background:#222;
-padding:25px;
+width:80%;
 margin:20px auto;
-width:70%;
+padding:20px;
+background:#111;
+border-left:4px solid red;
 border-radius:10px;
 }
 
 footer{
-background:black;
+margin-top:40px;
 padding:20px;
+background:#0a0a0a;
+border-top:3px solid red;
 text-align:center;
 }
