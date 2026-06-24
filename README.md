@@ -1,13 +1,11 @@
 # CODSOFT-WEB-PORTFOLIO
 
 ## Level 1 - Task 1: Personal Portfolio Website
-
 This project was developed as part of the CodSoft Web Development Internship (Level 1 - Task 1).
 
 The Personal Portfolio Website is a modern, responsive, and visually appealing web application designed to showcase my profile, technical skills, projects, resume, and contact information. The website features a clean user interface with glassmorphism effects, smooth navigation, interactive sections, and responsive design for an enhanced user experience across different devices.
 
 ### Features
-
 * Responsive and modern UI design
 * Hero section with introduction
 * About Me section
@@ -19,15 +17,11 @@ The Personal Portfolio Website is a modern, responsive, and visually appealing w
 * Glassmorphism-inspired design elements
 
 ### Technologies Used
+* HTML
+* CSS
 
-* HTML5
-* CSS3
-* JavaScript
-
-### Learning Outcomes
-
+## Learning Outcomes
 Through this project, I strengthened my understanding of:
-
 * Semantic HTML structure
 * CSS styling and responsive layouts
 * Modern UI/UX principles
